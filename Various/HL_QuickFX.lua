@@ -2,14 +2,13 @@
 -- @author halkun19
 -- @version 1.0
 -- @changelog 初版
--- @provides [main]=HL_QuickFX.lua
+-- @provides [main]=Various/HL_QuickFX.lua
 -- @link https://github.com/Hallkun19/ReaScripts
 -- @about
 --   # HL_QuickFX
 --   A quick and easy FX search tool for REAPER.
 --
 --   License: MIT
--- @depends reaimgui
 
 if not reaper.ImGui_GetBuiltinPath then
     reaper.MB("ReaImGuiが必要です。ReaPackからインストールしてください。", "Error", 0)
