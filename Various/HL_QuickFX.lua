@@ -9,6 +9,7 @@
 --   A quick and easy FX search tool for REAPER.
 --
 --   License: MIT
+-- @depends reaimgui
 
 if not reaper.ImGui_GetBuiltinPath then
     reaper.MB("ReaImGuiが必要です。ReaPackからインストールしてください。", "Error", 0)
