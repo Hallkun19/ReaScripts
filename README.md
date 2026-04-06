@@ -21,7 +21,7 @@ ReaPackを使用してインストールします。
 
 ### HL_QuickFX
 AEにあるFXConsoleってやつのREPAER版です
-完全に俺得
+Ctrl+Shift+Spaceにこれ割り当てるとすごい便利
 
 *(※今後スクリプトが増えたらここに追記していきます)*
 
