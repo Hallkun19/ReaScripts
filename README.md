@@ -15,7 +15,7 @@ ReaPackを使用してインストールします。
    `https://raw.githubusercontent.com/Hallkun19/ReaScripts/master/index.xml`
 2. REAPERのメニューから [拡張] -> [ReaPack] -> [Import a repository] を選択します。
 3. コピーしたURLを貼り付け、[OK] をクリックします。
-4.[拡張] -> [ReaPack] -> [Browse packages] を開き、「HL_」で検索して目的のスクリプトをインストールしてください。
+4. [拡張] -> [ReaPack] -> [Browse packages] を開き、「HL_」で検索して目的のスクリプトをインストールしてください。
 
 ## 収録スクリプト
 

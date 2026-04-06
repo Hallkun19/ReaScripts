@@ -1,34 +1,66 @@
 name: ReaPack Index
+
 on:
   push:
-    branches:
-      - master
-      - main
-      
-permissions:
-  contents: write
+    branches: [ main, master ]
+    paths-ignore:
+      - 'index.xml'
+  pull_request:
+    branches: [ main, master ]
 
 jobs:
-  build:
+  check:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.1'
+          bundler-cache: false
 
       - name: Install reapack-index
         run: gem install reapack-index
 
-      - name: Generate index.xml
-        # ここにオプションを追加しました（対話プロンプトの回避と名前設定）
-        run: reapack-index --name "HL_ReaScripts" --about README.md --no-commit
+      - name: Check index (PR用)
+        run: reapack-index --check
 
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
         with:
-          commit_message: "Update index.xml"
-          file_pattern: index.xml
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install reapack-index
+        run: gem install reapack-index
+
+      - name: Generate/Update index.xml
+        run: |
+          reapack-index \
+            --commit \
+            --commit-template "Update index.xml - $changelog" \
+            --url-template "https://github.com/${{ github.repository }}/raw/${{ github.sha }}/%FILENAME%"
+
+      - name: Commit index.xml if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.xml
+          if git diff --staged --quiet; then
+            echo "No changes to index.xml"
+          else
+            git commit -m "chore: update ReaPack index.xml"
+            git push
+          fi
