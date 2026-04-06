@@ -4,12 +4,30 @@ on:
     branches:
       - master
       - main
+      
+permissions:
+  contents: write # 自動コミットのために書き込み権限を明示
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: reapack-index
-        uses: cfillion/reapack-index@v1
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          commit-message: "Update index.xml"
+          ruby-version: '3.2' # 最新の安定版Rubyを使用
+
+      - name: Install reapack-index
+        run: gem install reapack-index
+
+      - name: Generate index.xml
+        run: reapack-index
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update index.xml"
+          file_pattern: index.xml
