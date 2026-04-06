@@ -6,7 +6,7 @@ on:
       - main
       
 permissions:
-  contents: write # 自動コミットのために書き込み権限を明示
+  contents: write
 
 jobs:
   build:
@@ -18,13 +18,14 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2' # 最新の安定版Rubyを使用
+          ruby-version: '3.2'
 
       - name: Install reapack-index
         run: gem install reapack-index
 
       - name: Generate index.xml
-        run: reapack-index
+        # ここにオプションを追加しました（対話プロンプトの回避と名前設定）
+        run: reapack-index --name "HL_ReaScripts" --about README.md --no-commit
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
