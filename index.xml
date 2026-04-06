@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="HL_ReaScripts">
-</index>
+<index version="1" name="HL_ReaScripts" commit="503cbbe09c9be8a5257145480042c53cb2389881">
+<category name="Various"><reapack name="HL_QuickFX.lua" type="script" desc="HL_QuickFX"><metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 HL_QuickFX\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A quick and easy FX search tool for REAPER.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 License: MIT\par}
+}
+]]></description><link rel="website">https://github.com/Hallkun19/ReaScripts</link></metadata><version name="1.0" author="halkun19" time="2026-04-06T22:57:01Z"><changelog><![CDATA[初版]]></changelog><source main="main">https://github.com/Hallkun19/ReaScripts/raw/503cbbe09c9be8a5257145480042c53cb2389881/Various/HL_QuickFX.lua</source></version></reapack></category><metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 HL_ReaScripts\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 REAPER\u21521 ?\u12369 ?\u12398 ?\u12473 ?\u12463 ?\u12522 ?\u12503 ?\u12488 ?\u12434 ?\u12414 ?\u12392 ?\u12417 ?\u12383 ?\u12522 ?\u12509 ?\u12472 ?\u12488 ?\u12522 ?\u12391 ?\u12377 ?\u12290 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 \u27880 ?\u24847 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \u12371 ?\u12398 ?\u12522 ?\u12509 ?\u12472 ?\u12488 ?\u12522 ?\u12398 ?\u12473 ?\u12463 ?\u12522 ?\u12503 ?\u12488 ?\u12399 ?\u12411 ?\u12392 ?\u12435 ?\u12393 ?ReaImGui\u12434 ?\u20351 ?\u29992 ?\u12375 ?\u12390 ?\u12356 ?\u12427 ?\u12398 ?\u12391 ?\u20808 ?\u12395 ?\u12452 ?\u12531 ?\u12473 ?\u12488 ?\u12540 ?\u12523 ?\u12375 ?\u12390 ?\u12367 ?\u12384 ?\u12373 ?\u12356 ?\u12290 ? Paranormal FX Router\u12434 ?\u20837 ?\u12428 ?\u12383 ?\u20154 ?\u12399 ?\u12418 ?\u12358 ?\u12377 ?\u12391 ?\u12395 ?\u12452 ?\u12531 ?\u12473 ?\u12488 ?\u12540 ?\u12523 ?\u12373 ?\u12428 ?\u12390 ?\u12356 ?\u12427 ?\u12392 ?\u24605 ?\u12356 ?\u12414 ?\u12377 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 \u12452 ?\u12531 ?\u12473 ?\u12488 ?\u12540 ?\u12523 ?\u26041 ?\u27861 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 ReaPack\u12434 ?\u20351 ?\u29992 ?\u12375 ?\u12390 ?\u12452 ?\u12531 ?\u12473 ?\u12488 ?\u12540 ?\u12523 ?\u12375 ?\u12414 ?\u12377 ?\u12290 ?\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab \u20197 ?\u19979 ?\u12398 ?URL\u12434 ?\u12467 ?\u12500 ?\u12540 ?\u12375 ?\u12414 ?\u12377 ?\u12290 ? {\f1 https://raw.githubusercontent.com/Hallkun19/ReaScripts/master/index.xml}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab REAPER\u12398 ?\u12513 ?\u12491 ?\u12517 ?\u12540 ?\u12363 ?\u12425 ? [\u25313 ?\u24373 ?] -> [ReaPack] -> [Import a repository] \u12434 ?\u36984 ?\u25246 ?\u12375 ?\u12414 ?\u12377 ?\u12290 ?\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab \u12467 ?\u12500 ?\u12540 ?\u12375 ?\u12383 ?URL\u12434 ?\u36028 ?\u12426 ?\u20184 ?\u12369 ?\u12289 ?[OK] \u12434 ?\u12463 ?\u12522 ?\u12483 ?\u12463 ?\u12375 ?\u12414 ?\u12377 ?\u12290 ?\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab [\u25313 ?\u24373 ?] -> [ReaPack] -> [Browse packages] \u12434 ?\u38283 ?\u12365 ?\u12289 ?\u12300 ?HL_\u12301 ?\u12391 ?\u26908 ?\u32034 ?\u12375 ?\u12390 ?\u30446 ?\u30340 ?\u12398 ?\u12473 ?\u12463 ?\u12522 ?\u12503 ?\u12488 ?\u12434 ?\u12452 ?\u12531 ?\u12473 ?\u12488 ?\u12540 ?\u12523 ?\u12375 ?\u12390 ?\u12367 ?\u12384 ?\u12373 ?\u12356 ?\u12290 ?\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 \u21454 ?\u37682 ?\u12473 ?\u12463 ?\u12522 ?\u12503 ?\u12488 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 HL_QuickFX\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 AE\u12395 ?\u12354 ?\u12427 ?FXConsole\u12387 ?\u12390 ?\u12420 ?\u12388 ?\u12398 ?REPAER\u29256 ?\u12391 ?\u12377 ? Ctrl+Shift+Space\u12395 ?\u12371 ?\u12428 ?\u21106 ?\u12426 ?\u24403 ?\u12390 ?\u12427 ?\u12392 ?\u12377 ?\u12372 ?\u12356 ?\u20415 ?\u21033 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\i (\u8251 ?\u20170 ?\u24460 ?\u12473 ?\u12463 ?\u12522 ?\u12503 ?\u12488 ?\u12364 ?\u22679 ?\u12360 ?\u12383 ?\u12425 ?\u12371 ?\u12371 ?\u12395 ?\u36861 ?\u35352 ?\u12375 ?\u12390 ?\u12356 ?\u12365 ?\u12414 ?\u12377 ?)}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 \u12521 ?\u12452 ?\u12475 ?\u12531 ?\u12473 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \u12371 ?\u12398 ?\u12522 ?\u12509 ?\u12472 ?\u12488 ?\u12522 ?\u20869 ?\u12398 ?\u12473 ?\u12463 ?\u12522 ?\u12503 ?\u12488 ?\u12399 ?\u12289 ?\u29305 ?\u35352 ?\u12364 ?\u12394 ?\u12356 ?\u38480 ?\u12426 ? MIT License \u12398 ?\u12418 ?\u12392 ?\u12391 ?\u20844 ?\u38283 ?\u12373 ?\u12428 ?\u12390 ?\u12356 ?\u12414 ?\u12377 ?\u12290 ? \u35443 ?\u32048 ?\u12399 ?\u21508 ?\u12473 ?\u12463 ?\u12522 ?\u12503 ?\u12488 ?\u12398 ?\u12504 ?\u12483 ?\u12480 ?\u12540 ?\u12289 ?\u12414 ?\u12383 ?\u12399 ? LICENSE \u12501 ?\u12449 ?\u12452 ?\u12523 ?\u12434 ?\u21442 ?\u29031 ?\u12375 ?\u12390 ?\u12367 ?\u12384 ?\u12373 ?\u12356 ?\u12290 ?\par}
+}
+]]></description></metadata></index>
