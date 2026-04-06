@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: reapack-index
-        uses: cfillion/reapack-index-action@v2
+        uses: cfillion/reapack-index@v1
         with:
           commit-message: "Update index.xml"
