@@ -2,7 +2,6 @@
 -- @author halkun19
 -- @version 1.0
 -- @changelog 初版
--- @provides Various/HL_QuickFX.lua
 -- @link https://github.com/Hallkun19/ReaScripts
 -- @about
 --   # HL_QuickFX
